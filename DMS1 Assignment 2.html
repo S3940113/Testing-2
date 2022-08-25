@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+    <title>Icon Template Square</title>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.0/buzz.min.js"></script>
+        
+        <style>
+            .row{
+                width: 820px;px;
+                margin: 20px auto 20px auto ;
+            }
+            .image-container {
+                display: table-cell;
+                vertical-align: middle;
+                padding:20px;
+            }
+        </style>
+    </head>
+
+    <body style="background-color: rgb(143, 176, 143);"> 
+
+        <div class="row">
+            <div class="image-container"><img id="kimono1" src="img/kimono1.png" height="380" width="200"/></div>
+            <div class="image-container"><img id="kimono2" src="img/kimono2.png" height="380" width="200"/></div>
+            <div class="image-container"><img id="kimono3" src="img/kimono3.png" height="380" width="200"/></div>
+        </div>
+
+        <div class="row">
+            <div class="image-container"><img id="kimono4" src="img/kimono4.png" height="380" width="200"/></div>
+            <div class="image-container"><img id="kimono5" src="img/kimono5.png" height="380" width="200"/></div>
+            <div class="image-container"><img id="kimono6" src="img/kimono6.png" height="380" width="200"/></div>
+            </div>
+
+        <div class="row">
+            <div class="image-container"><img id="kimono7" src="img/kimono7.png" height="380" width="200"/></div>
+            <div class="image-container"><img id="kimono8" src="img/kimono8.png" height="380" width="200"/></div>
+            <div class="image-container"><img id="kimono9" src="img/kimono9.png" height="380" width="200"/></div>
+        </div>
+        
+        <script>
+            var sound1 = new buzz.sound("sound/kimono1audio.mp3");
+            var sound2 = new buzz.sound("sound/kimono2audio.mp3");
+            var sound3 = new buzz.sound("sound/kimono3audio.mp3");
+            var sound4 = new buzz.sound("sound/kimono4audio.wav");
+            var sound5 = new buzz.sound("sound/kimono5audio.wav");
+            var sound6 = new buzz.sound("sound/kimono6audio.wav");
+            var sound7 = new buzz.sound("sound/kimono7audio.wav");
+            var sound8 = new buzz.sound("sound/kimono8audio.mp3");
+            var sound9 = new buzz.sound("sound/kimono9audio.wav");
+     
+            window.onload = function() {
+                document.getElementById('kimono1').addEventListener('click', function () {sound1.play(); });  
+                document.getElementById('kimono2').addEventListener('click', function () {sound2.play(); });
+                document.getElementById('kimono3').addEventListener('click', function () {sound3.play(); });
+                document.getElementById('kimono4').addEventListener('click', function () {sound4.play(); });
+                document.getElementById('kimono5').addEventListener('click', function () {sound5.play(); }); 
+                document.getElementById('kimono6').addEventListener('click', function () {sound6.play(); }); 
+                document.getElementById('kimono7').addEventListener('click', function () {sound7.play(); }); 
+                document.getElementById('kimono8').addEventListener('click', function () {sound8.play(); }); 
+                document.getElementById('kimono9').addEventListener('click', function () {sound9.play(); });
+            }  
+        </script>   
+        
+    </body>
+    
+</html>
